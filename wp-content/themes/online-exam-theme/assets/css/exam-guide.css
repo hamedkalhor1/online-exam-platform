@@ -1,0 +1,797 @@
+/* ==============================================================
+   EXAM GUIDE PAGE
+   ============================================================== */
+
+.exam-guide-page {
+    min-height: 100vh;
+
+    background:
+        linear-gradient(
+            180deg,
+            #fafbff 0%,
+            #f7f9ff 100%
+        );
+}
+
+
+/* ==============================================================
+   HERO
+   ============================================================== */
+
+.guide-hero {
+    padding: 65px 0 50px;
+
+    text-align: center;
+
+    border-bottom: 1px solid #edf0f6;
+
+    background:
+        radial-gradient(
+            circle at 50% 0%,
+            rgba(69, 75, 238, 0.08),
+            transparent 42%
+        );
+}
+
+
+.guide-hero-content {
+    max-width: 700px;
+
+    margin: 0 auto;
+}
+
+
+.guide-eyebrow {
+    display: inline-flex;
+
+    margin-bottom: 12px;
+
+    padding: 6px 14px;
+
+    border-radius: 30px;
+
+    background: #eef0ff;
+
+    color: #4650ec;
+
+    font-size: 11px;
+
+    font-weight: 700;
+}
+
+
+.guide-hero h1 {
+    margin: 0;
+
+    color: #071538;
+
+    font-size: 38px;
+
+    font-weight: 800;
+}
+
+
+.guide-hero p {
+    margin: 13px 0 0;
+
+    color: #758096;
+
+    font-size: 13px;
+
+    line-height: 2;
+}
+
+
+/* ==============================================================
+   SECTION HEADING
+   ============================================================== */
+
+.guide-section-heading {
+    max-width: 680px;
+
+    margin: 0 auto 42px;
+
+    text-align: center;
+}
+
+
+.guide-section-heading > span {
+    color: #4650ec;
+
+    font-size: 11px;
+
+    font-weight: 700;
+}
+
+
+.guide-section-heading h2 {
+    margin: 7px 0 8px;
+
+    color: #101936;
+
+    font-size: 28px;
+
+    font-weight: 800;
+}
+
+
+.guide-section-heading p {
+    margin: 0;
+
+    color: #808b9f;
+
+    font-size: 11px;
+}
+
+
+/* ==============================================================
+   STEPS
+   ============================================================== */
+
+.guide-steps-section {
+    padding: 60px 0 75px;
+}
+
+
+.guide-steps {
+    max-width: 1050px;
+
+    margin: 0 auto;
+
+    position: relative;
+}
+
+
+.guide-steps::before {
+    content: "";
+
+    position: absolute;
+
+    top: 64px;
+    bottom: 64px;
+    right: 34px;
+
+    width: 2px;
+
+    background:
+        linear-gradient(
+            180deg,
+            #9ba5ff,
+            #e2e6ff
+        );
+}
+
+
+.guide-step {
+    position: relative;
+
+    min-height: 125px;
+
+    margin-bottom: 18px;
+
+    padding: 24px 92px 24px 28px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 22px;
+
+    border: 1px solid #e5e9f2;
+
+    border-radius: 17px;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 8px 27px
+        rgba(20, 30, 70, 0.045);
+
+    transition:
+        transform 0.2s ease,
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+.guide-step:last-child {
+    margin-bottom: 0;
+}
+
+
+.guide-step:hover {
+    transform: translateX(-4px);
+
+    border-color: #cfd6ff;
+
+    box-shadow:
+        0 15px 35px
+        rgba(20, 30, 70, 0.08);
+}
+
+
+/* ==============================================================
+   STEP NUMBER
+   ============================================================== */
+
+.guide-step-number {
+    position: absolute;
+
+    z-index: 2;
+
+    top: 50%;
+    right: 15px;
+
+    width: 40px;
+    height: 40px;
+
+    transform:
+        translateY(-50%);
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border: 5px solid #f8f9ff;
+
+    border-radius: 50%;
+
+    background:
+        linear-gradient(
+            145deg,
+            #3e49ee,
+            #5751f4
+        );
+
+    color: #ffffff;
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    box-shadow:
+        0 6px 16px
+        rgba(65, 71, 235, 0.19);
+}
+
+
+/* ==============================================================
+   STEP ICON
+   ============================================================== */
+
+.guide-step-icon {
+    width: 57px;
+    height: 57px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 15px;
+
+    background: #f0f2ff;
+}
+
+
+.guide-step-icon svg {
+    width: 27px;
+    height: 27px;
+
+    fill: none;
+
+    stroke: #4b55df;
+
+    stroke-width: 1.7;
+
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+
+/* ==============================================================
+   STEP CONTENT
+   ============================================================== */
+
+.guide-step-content {
+    flex: 1;
+}
+
+
+.guide-step-content h3 {
+    margin: 0;
+
+    color: #111936;
+
+    font-size: 15px;
+
+    font-weight: 800;
+}
+
+
+.guide-step-content > p {
+    margin: 7px 0 0;
+
+    color: #7b869a;
+
+    font-size: 10px;
+
+    line-height: 1.9;
+}
+
+
+/* ==============================================================
+   IMPORTANT STEP
+   ============================================================== */
+
+.guide-step-important {
+    border-color: #cfd5ff;
+
+    background:
+        linear-gradient(
+            90deg,
+            #ffffff,
+            #f8f9ff
+        );
+}
+
+
+.guide-important-note {
+    width: fit-content;
+
+    margin-top: 11px;
+
+    padding: 7px 11px;
+
+    border: 1px solid #ffe0ac;
+
+    border-radius: 7px;
+
+    background: #fff9ed;
+
+    color: #9a6200;
+
+    font-size: 9px;
+
+    font-weight: 600;
+}
+
+
+/* ==============================================================
+   RULES SECTION
+   ============================================================== */
+
+.guide-rules-section {
+    padding: 0 0 75px;
+}
+
+
+.guide-rules-box {
+    padding: 35px;
+
+    border: 1px solid #e4e8f2;
+
+    border-radius: 20px;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 10px 35px
+        rgba(20, 30, 70, 0.05);
+}
+
+
+/* ==============================================================
+   RULES HEADER
+   ============================================================== */
+
+.guide-rules-header {
+    margin-bottom: 30px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+}
+
+
+.guide-rules-icon {
+    width: 52px;
+    height: 52px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 14px;
+
+    background: #fff7e6;
+}
+
+
+.guide-rules-icon svg {
+    width: 27px;
+    height: 27px;
+
+    fill: none;
+
+    stroke: #d79313;
+
+    stroke-width: 1.7;
+
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+
+.guide-rules-header span {
+    color: #9b6a12;
+
+    font-size: 9px;
+
+    font-weight: 700;
+}
+
+
+.guide-rules-header h2 {
+    margin: 3px 0 0;
+
+    color: #111936;
+
+    font-size: 21px;
+
+    font-weight: 800;
+}
+
+
+/* ==============================================================
+   RULE GRID
+   ============================================================== */
+
+.guide-rules-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 14px;
+}
+
+
+.guide-rule {
+    min-height: 115px;
+
+    padding: 17px;
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 12px;
+
+    border: 1px solid #e9ecf2;
+
+    border-radius: 13px;
+
+    background: #fafbfe;
+}
+
+
+.guide-rule-check {
+    width: 27px;
+    height: 27px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #edf1ff;
+
+    color: #4650df;
+
+    font-size: 11px;
+
+    font-weight: 900;
+}
+
+
+.guide-rule strong {
+    display: block;
+
+    color: #1c2541;
+
+    font-size: 11px;
+
+    font-weight: 800;
+}
+
+
+.guide-rule p {
+    margin: 5px 0 0;
+
+    color: #818b9e;
+
+    font-size: 9px;
+
+    line-height: 1.9;
+}
+
+
+/* ==============================================================
+   CTA
+   ============================================================== */
+
+.guide-cta-section {
+    padding: 0 0 80px;
+}
+
+
+.guide-cta {
+    min-height: 180px;
+
+    padding: 35px 45px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 35px;
+
+    overflow: hidden;
+
+    position: relative;
+
+    border-radius: 20px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #101e47,
+            #283c88
+        );
+
+    box-shadow:
+        0 18px 45px
+        rgba(15, 30, 70, 0.15);
+}
+
+
+.guide-cta::after {
+    content: "";
+
+    position: absolute;
+
+    width: 260px;
+    height: 260px;
+
+    left: -80px;
+    top: -120px;
+
+    border-radius: 50%;
+
+    background:
+        rgba(
+            255,
+            255,
+            255,
+            0.05
+        );
+}
+
+
+.guide-cta > div {
+    position: relative;
+
+    z-index: 2;
+}
+
+
+.guide-cta > div > span {
+    color: #aebfff;
+
+    font-size: 10px;
+
+    font-weight: 600;
+}
+
+
+.guide-cta h2 {
+    margin: 6px 0;
+
+    color: #ffffff;
+
+    font-size: 24px;
+
+    font-weight: 800;
+}
+
+
+.guide-cta p {
+    margin: 0;
+
+    color: #c6cfe4;
+
+    font-size: 10px;
+}
+
+
+/* ==============================================================
+   CTA BUTTON
+   ============================================================== */
+
+.guide-login-button {
+    position: relative;
+
+    z-index: 2;
+
+    min-width: 175px;
+    height: 49px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+
+    border-radius: 10px;
+
+    background: #ffffff;
+
+    color: #23357d;
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    transition:
+        transform 0.2s ease,
+        background 0.2s ease;
+}
+
+
+.guide-login-button:hover {
+    transform: translateY(-2px);
+
+    background: #f1f3ff;
+}
+
+
+.guide-login-button span {
+    font-size: 17px;
+}
+
+
+/* ==============================================================
+   RESPONSIVE
+   ============================================================== */
+
+@media (max-width: 950px) {
+
+    .guide-rules-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .guide-step {
+        padding:
+            24px 75px
+            24px 18px;
+    }
+
+
+    .guide-cta {
+        align-items: flex-start;
+
+        flex-direction: column;
+    }
+
+
+    .guide-login-button {
+        width: 100%;
+    }
+
+}
+
+
+@media (max-width: 550px) {
+
+    .guide-hero {
+        padding:
+            45px 0
+            35px;
+    }
+
+
+    .guide-hero h1 {
+        font-size: 30px;
+    }
+
+
+    .guide-steps-section {
+        padding:
+            40px 0
+            55px;
+    }
+
+
+    .guide-section-heading h2 {
+        font-size: 23px;
+    }
+
+
+    .guide-step {
+        min-height: auto;
+
+        padding:
+            25px 68px
+            25px 17px;
+
+        align-items: flex-start;
+
+        gap: 13px;
+    }
+
+
+    .guide-step-icon {
+        width: 45px;
+        height: 45px;
+    }
+
+
+    .guide-step-icon svg {
+        width: 22px;
+        height: 22px;
+    }
+
+
+    .guide-steps::before {
+        right: 31px;
+    }
+
+
+    .guide-step-number {
+        right: 12px;
+    }
+
+
+    .guide-rules-box {
+        padding: 22px 17px;
+    }
+
+
+    .guide-rules-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .guide-cta {
+        padding: 28px 22px;
+    }
+
+
+    .guide-cta h2 {
+        font-size: 20px;
+    }
+
+}

@@ -1,0 +1,1380 @@
+/* ==============================================================
+   HOME PAGE
+   ============================================================== */
+
+.public-home {
+    background:
+        linear-gradient(
+            180deg,
+            #fafbff 0%,
+            #f7f9ff 100%
+        );
+}
+
+
+/* ==============================================================
+   HOME SCREEN
+   ============================================================== */
+
+.home-screen {
+    min-height: calc(100dvh - 76px);
+
+    overflow: visible;
+
+    background:
+        radial-gradient(
+            circle at 8% 35%,
+            rgba(80, 95, 255, 0.08),
+            transparent 27%
+        ),
+        linear-gradient(
+            180deg,
+            #fafbff 0%,
+            #f7f9ff 100%
+        );
+}
+
+
+.home-screen-inner {
+    width: min(
+        1540px,
+        calc(100% - 70px)
+    );
+
+    margin: 0 auto;
+
+    padding: 34px 0 45px;
+
+    display: grid;
+
+    grid-template-rows:
+        auto
+        auto;
+
+    gap: 30px;
+}
+
+
+/* ==============================================================
+   HERO
+   ============================================================== */
+
+.home-main {
+    display: grid;
+
+    grid-template-columns:
+        minmax(410px, 0.9fr)
+        minmax(580px, 1.3fr);
+
+    align-items: center;
+
+    gap: 75px;
+
+    min-height: 520px;
+}
+
+
+/* ==============================================================
+   HERO CONTENT
+   ============================================================== */
+
+.home-content {
+    text-align: center;
+}
+
+
+.home-content h1 {
+    margin: 0;
+
+    color: #071538;
+
+    font-size: clamp(
+        34px,
+        3.25vw,
+        53px
+    );
+
+    font-weight: 800;
+
+    line-height: 1.25;
+}
+
+
+.home-content h2 {
+    margin: 12px 0 0;
+
+    color: #4147ef;
+
+    font-size: clamp(
+        33px,
+        3vw,
+        48px
+    );
+
+    font-weight: 800;
+
+    line-height: 1.25;
+}
+
+
+.home-description {
+    margin: 20px 0 0;
+
+    color: #657087;
+
+    font-size: clamp(
+        12px,
+        1vw,
+        16px
+    );
+
+    line-height: 2.05;
+}
+
+
+/* ==============================================================
+   HERO MINI FEATURES
+   ============================================================== */
+
+.home-mini-features {
+    margin-top: 28px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 22px;
+}
+
+
+.mini-feature {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    text-align: right;
+}
+
+
+.mini-feature > div {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 3px;
+}
+
+
+.mini-feature strong {
+    color: #111b3d;
+
+    font-size: 13px;
+
+    font-weight: 700;
+}
+
+
+.mini-feature small {
+    color: #7f8aa0;
+
+    font-size: 9px;
+}
+
+
+.mini-icon {
+    width: 43px;
+    height: 43px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #e1e5ff;
+
+    border-radius: 13px;
+
+    background: #fbfbff;
+}
+
+
+.mini-icon svg {
+    width: 22px;
+    height: 22px;
+
+    fill: none;
+
+    stroke: #4751f2;
+
+    stroke-width: 1.8;
+
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+
+.mini-divider {
+    width: 1px;
+    height: 45px;
+
+    background: #e4e7ef;
+}
+
+
+/* ==============================================================
+   HERO BUTTONS
+   ============================================================== */
+
+.home-actions {
+    width: min(
+        310px,
+        100%
+    );
+
+    margin: 27px auto 0;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 11px;
+}
+
+
+.home-login-button,
+.home-guide-button {
+    height: 51px;
+
+    padding: 0 22px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10px;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    transition:
+        transform 0.2s ease,
+        background 0.2s ease,
+        border-color 0.2s ease;
+}
+
+
+.home-login-button {
+    position: relative;
+
+    background:
+        linear-gradient(
+            90deg,
+            #3641ed,
+            #4945f5
+        );
+
+    color: #ffffff;
+
+    box-shadow:
+        0 12px 26px
+        rgba(61, 67, 235, 0.18);
+}
+
+
+.home-login-button > span {
+    position: absolute;
+
+    left: 23px;
+
+    font-size: 22px;
+
+    font-weight: 400;
+}
+
+
+.home-login-button:hover {
+    color: #ffffff;
+
+    transform: translateY(-1px);
+}
+
+
+.home-guide-button {
+    position: relative;
+
+    border: 1px solid #afb7ff;
+
+    background: rgba(
+        255,
+        255,
+        255,
+        0.7
+    );
+
+    color: #4650ec;
+}
+
+
+.home-guide-button:hover {
+    background: #ffffff;
+
+    border-color: #7f89ff;
+}
+
+
+.guide-question {
+    position: absolute;
+
+    left: 20px;
+
+    width: 21px;
+    height: 21px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border: 2px solid #4a53ef;
+
+    border-radius: 50%;
+
+    font-size: 11px;
+}
+
+
+/* ==============================================================
+   ILLUSTRATION
+   ============================================================== */
+
+.home-illustration {
+    position: relative;
+
+    min-height: 500px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+}
+
+
+.illustration-bg {
+    position: absolute;
+
+    left: -70px;
+    top: 4%;
+
+    width: 470px;
+    height: 470px;
+
+    border-radius:
+        45% 55% 48% 52%
+        / 48% 47% 53% 52%;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(218, 221, 255, 0.65),
+            rgba(244, 245, 255, 0.4)
+        );
+}
+
+
+.illustration-dots {
+    position: absolute;
+
+    left: 225px;
+    top: 45px;
+
+    width: 90px;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 7px);
+
+    gap: 13px;
+}
+
+
+.illustration-dots span {
+    width: 6px;
+    height: 6px;
+
+    border-radius: 50%;
+
+    background: #dfe3ff;
+}
+
+
+/* ==============================================================
+   LAPTOP
+   ============================================================== */
+
+.home-laptop {
+    position: relative;
+
+    z-index: 3;
+
+    width: 355px;
+
+    transform:
+        translate(-20px, 15px)
+        rotate(-1deg);
+}
+
+
+.laptop-screen {
+    height: 185px;
+
+    padding: 25px 30px;
+
+    border: 11px solid #252c42;
+
+    border-bottom-width: 13px;
+
+    border-radius:
+        15px 15px
+        7px 7px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #fbfcff,
+            #eef1fa
+        );
+
+    box-shadow:
+        0 18px 42px
+        rgba(33, 42, 76, 0.18);
+}
+
+
+.laptop-question-line {
+    height: 7px;
+
+    margin-bottom: 10px;
+
+    border-radius: 10px;
+
+    background: #dfe4ef;
+}
+
+
+.line-one {
+    width: 70%;
+}
+
+
+.line-two {
+    width: 48%;
+}
+
+
+.laptop-answer {
+    height: 22px;
+
+    margin-top: 8px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 9px;
+}
+
+
+.laptop-answer span {
+    width: 18px;
+
+    color: #64748b;
+
+    font-size: 9px;
+
+    font-weight: 700;
+}
+
+
+.laptop-answer i {
+    width: 100%;
+    height: 17px;
+
+    border: 1px solid #e1e5ed;
+
+    border-radius: 8px;
+
+    background: #f8f9fc;
+}
+
+
+.laptop-answer.selected i {
+    position: relative;
+
+    border-color: #99afff;
+
+    background: #eff3ff;
+}
+
+
+.laptop-answer.selected i::after {
+    content: "✓";
+
+    position: absolute;
+
+    left: 8px;
+    top: 0;
+
+    color: #3166ec;
+
+    font-size: 11px;
+
+    font-style: normal;
+
+    font-weight: 800;
+}
+
+
+/* ==============================================================
+   LAPTOP KEYBOARD
+   ============================================================== */
+
+.laptop-keyboard {
+    position: relative;
+
+    width: 385px;
+    height: 130px;
+
+    margin-right: -15px;
+
+    transform:
+        perspective(380px)
+        rotateX(57deg);
+
+    transform-origin: top;
+
+    border-radius:
+        0 0
+        15px 15px;
+
+    background:
+        linear-gradient(
+            180deg,
+            #353c50,
+            #252b3c
+        );
+
+    box-shadow:
+        0 25px 30px
+        rgba(26, 34, 55, 0.24);
+}
+
+
+.keyboard-lines {
+    padding: 16px 23px 0;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(7, 1fr);
+
+    gap: 5px;
+}
+
+
+.keyboard-lines span {
+    height: 10px;
+
+    border-radius: 2px;
+
+    background: #171c29;
+}
+
+
+.touchpad {
+    width: 92px;
+    height: 45px;
+
+    margin: 10px auto 0;
+
+    border: 1px solid #454c60;
+
+    border-radius: 5px;
+}
+
+
+/* ==============================================================
+   BOOKS ILLUSTRATION
+   ============================================================== */
+
+.home-books {
+    position: absolute;
+
+    z-index: 4;
+
+    left: 5px;
+    bottom: 30px;
+
+    width: 140px;
+    height: 80px;
+}
+
+
+.book {
+    position: absolute;
+
+    width: 135px;
+    height: 34px;
+
+    border-radius:
+        8px 4px
+        4px 8px;
+
+    box-shadow:
+        0 10px 22px
+        rgba(20, 30, 60, 0.15);
+}
+
+
+.book-blue {
+    bottom: 35px;
+
+    transform: rotate(-6deg);
+
+    background:
+        linear-gradient(
+            180deg,
+            #346ce5,
+            #2450be
+        );
+}
+
+
+.book-yellow {
+    bottom: 2px;
+
+    left: 8px;
+
+    transform: rotate(3deg);
+
+    background:
+        linear-gradient(
+            180deg,
+            #ffc943,
+            #e6a51e
+        );
+}
+
+
+/* ==============================================================
+   PLANT ILLUSTRATION
+   ============================================================== */
+
+.home-plant {
+    position: absolute;
+
+    z-index: 4;
+
+    left: 335px;
+    bottom: 82px;
+
+    width: 80px;
+    height: 110px;
+}
+
+
+.plant-pot {
+    position: absolute;
+
+    bottom: 0;
+    left: 18px;
+
+    width: 48px;
+    height: 48px;
+
+    border-radius:
+        5px 5px
+        18px 18px;
+
+    background:
+        linear-gradient(
+            180deg,
+            #ffffff,
+            #dbe0ea
+        );
+
+    box-shadow:
+        0 8px 17px
+        rgba(30, 40, 65, 0.12);
+}
+
+
+.plant-leaf {
+    position: absolute;
+
+    width: 26px;
+    height: 48px;
+
+    border-radius:
+        80% 10%
+        80% 10%;
+
+    background:
+        linear-gradient(
+            145deg,
+            #6ed879,
+            #36a84c
+        );
+}
+
+
+.leaf-one {
+    left: 25px;
+    top: 13px;
+
+    transform: rotate(-35deg);
+}
+
+
+.leaf-two {
+    left: 45px;
+    top: 7px;
+
+    transform:
+        rotate(42deg)
+        scaleX(-1);
+}
+
+
+.leaf-three {
+    left: 38px;
+    top: 31px;
+
+    transform:
+        rotate(15deg)
+        scale(.8);
+}
+
+
+/* ==============================================================
+   RESOURCE CARDS
+   ============================================================== */
+
+.home-resource-cards {
+    width: 70%;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 16px;
+}
+
+
+.home-resource-card {
+    min-width: 0;
+
+    min-height: 150px;
+
+    padding: 18px 23px;
+
+    display: flex;
+
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 18px;
+
+    overflow: hidden;
+
+    border: 1px solid #ebedf4;
+
+    border-radius: 14px;
+
+    background:
+        rgba(
+            255,
+            255,
+            255,
+            0.88
+        );
+
+    box-shadow:
+        0 8px 25px
+        rgba(40, 50, 90, 0.055);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+.home-resource-card:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 15px 30px
+        rgba(40, 50, 90, 0.09);
+}
+
+
+.resource-text {
+    flex: 1;
+
+    min-width: 0;
+}
+
+
+.resource-text h3 {
+    margin: 0 0 5px;
+
+    color: #111936;
+
+    font-size: 14px;
+
+    font-weight: 800;
+}
+
+
+.resource-text p {
+    margin: 0 0 9px;
+
+    color: #727d91;
+
+    font-size: 9px;
+
+    line-height: 1.8;
+}
+
+
+.resource-more {
+    width: fit-content;
+
+    min-height: 30px;
+
+    padding: 0 13px;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    border: 1px solid #d7dced;
+
+    border-radius: 7px;
+
+    color: #4450ee;
+
+    font-size: 9px;
+
+    font-weight: 600;
+}
+
+
+.resource-more b {
+    font-size: 17px;
+
+    line-height: 1;
+}
+
+
+/* ==============================================================
+   RESOURCE VISUALS
+   ============================================================== */
+
+.resource-visual {
+    width: 90px;
+    height: 92px;
+
+    flex-shrink: 0;
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* ==============================================================
+   SMALL BOOKS CARD
+   ============================================================== */
+
+.resource-books .small-book {
+    position: absolute;
+
+    width: 76px;
+    height: 25px;
+
+    border-radius:
+        6px 3px
+        3px 6px;
+
+    box-shadow:
+        0 6px 15px
+        rgba(30, 40, 80, 0.12);
+}
+
+
+.book-a {
+    top: 12px;
+
+    background: #527ae5;
+}
+
+
+.book-b {
+    top: 36px;
+
+    left: 4px;
+
+    background: #3454bf;
+}
+
+
+.book-c {
+    top: 59px;
+
+    left: 8px;
+
+    background: #f0b525;
+}
+
+
+/* ==============================================================
+   MEDIA CARD
+   ============================================================== */
+
+.monitor-screen {
+    width: 74px;
+    height: 55px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border: 5px solid #dce1fa;
+
+    border-radius: 7px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #5254ef,
+            #3d50cb
+        );
+
+    box-shadow:
+        0 7px 16px
+        rgba(55, 65, 190, 0.18);
+}
+
+
+.monitor-screen span {
+    color: #ffffff;
+
+    font-size: 24px;
+}
+
+
+.monitor-stand {
+    position: absolute;
+
+    bottom: 14px;
+
+    width: 37px;
+    height: 7px;
+
+    border-radius: 2px;
+
+    background: #aeb8d8;
+}
+
+
+.monitor-stand::before {
+    content: "";
+
+    position: absolute;
+
+    left: 16px;
+    bottom: 6px;
+
+    width: 6px;
+    height: 14px;
+
+    background: #bfc6dd;
+}
+
+
+/* ==============================================================
+   GUIDE CARD IMPROVED
+   ============================================================== */
+
+.guide-board-paper {
+
+    width: 56px;
+    height: 76px;
+
+    padding: 15px 9px;
+
+    position: relative;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: space-between;
+
+    gap: 6px;
+
+    border: 4px solid #8ca6ff;
+
+    border-radius: 12px;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 10px 22px
+        rgba(55, 65, 150, 0.15);
+}
+
+
+
+.guide-board-paper::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: -9px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 26px;
+
+    height: 10px;
+
+    border-radius: 5px;
+
+    background: #6a86db;
+
+}
+
+
+
+.guide-board-paper span {
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: flex-end;
+
+    color: #5669dc;
+
+    font-size: 13px;
+
+    font-weight: 800;
+
+}
+
+
+
+.guide-board-paper span::before {
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+
+    width: 22px;
+
+    height: 2px;
+
+    border-radius: 10px;
+
+    background: #dce4ff;
+
+}
+
+/* ==============================================================
+   RESPONSIVE - TABLET
+   ============================================================== */
+
+@media (max-width: 1100px) {
+
+    .home-screen-inner {
+        width: calc(100% - 40px);
+    }
+
+
+    .home-main {
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+    }
+
+
+    .home-content {
+        order: 1;
+    }
+
+
+    .home-illustration {
+        order: 2;
+
+        min-height: 450px;
+    }
+
+
+    .home-resource-cards {
+        width: 100%;
+    }
+
+}
+
+
+/* ==============================================================
+   RESPONSIVE - MEDIUM
+   ============================================================== */
+
+@media (max-width: 850px) {
+
+    .home-mini-features {
+        flex-wrap: wrap;
+    }
+
+
+    .mini-divider {
+        display: none;
+    }
+
+
+    .home-resource-cards {
+        grid-template-columns: 1fr;
+    }
+
+
+    .home-resource-card {
+        min-height: 140px;
+    }
+
+}
+
+
+/* ==============================================================
+   RESPONSIVE - MOBILE
+   ============================================================== */
+
+@media (max-width: 600px) {
+
+    .home-screen {
+        min-height:
+            calc(
+                100dvh - 68px
+            );
+    }
+
+
+    .home-screen-inner {
+        width: calc(100% - 28px);
+
+        padding:
+            25px 0
+            35px;
+
+        gap: 24px;
+    }
+
+
+    .home-main {
+        min-height: auto;
+    }
+
+
+    .home-content h1 {
+        font-size: 31px;
+
+        line-height: 1.5;
+    }
+
+
+    .home-content h2 {
+        margin-top: 8px;
+
+        font-size: 30px;
+    }
+
+
+    .home-description {
+        font-size: 12px;
+
+        line-height: 2;
+    }
+
+
+    .home-mini-features {
+        margin-top: 22px;
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+        gap: 12px;
+    }
+
+
+    .mini-feature {
+        width: 100%;
+
+        padding: 10px 12px;
+
+        border: 1px solid #e8ebf5;
+
+        border-radius: 10px;
+
+        background: rgba(
+            255,
+            255,
+            255,
+            0.7
+        );
+    }
+
+
+    .mini-feature small {
+        font-size: 10px;
+    }
+
+
+    .home-actions {
+        width: 100%;
+    }
+
+
+    .home-login-button,
+    .home-guide-button {
+        width: 100%;
+    }
+
+
+    .home-illustration {
+        min-height: 350px;
+    }
+
+
+    .illustration-bg {
+        left: 50%;
+
+        width: 320px;
+        height: 320px;
+
+        transform:
+            translateX(-50%);
+    }
+
+
+    .illustration-dots {
+        display: none;
+    }
+
+
+    .home-laptop {
+        width: 275px;
+
+        transform:
+            translate(0, 15px)
+            rotate(-1deg);
+    }
+
+
+    .laptop-screen {
+        height: 150px;
+
+        padding: 17px 20px;
+
+        border-width: 8px;
+
+        border-bottom-width: 10px;
+    }
+
+
+    .laptop-keyboard {
+        width: 300px;
+        height: 100px;
+
+        margin-right: -12px;
+    }
+
+
+    .keyboard-lines {
+        padding:
+            12px 17px 0;
+    }
+
+
+    .keyboard-lines span {
+        height: 8px;
+    }
+
+
+    .touchpad {
+        width: 70px;
+        height: 35px;
+
+        margin-top: 7px;
+    }
+
+
+    .home-books {
+        left: 0;
+
+        transform:
+            scale(.78);
+    }
+
+
+    .home-plant {
+        left: auto;
+        right: 0;
+
+        transform:
+            scale(.78);
+    }
+
+
+    .home-resource-card {
+        padding: 17px;
+    }
+
+
+    .resource-text h3 {
+        font-size: 14px;
+    }
+
+
+    .resource-text p {
+        font-size: 10px;
+    }
+
+}

@@ -1,0 +1,299 @@
+body {
+    background: red !important;
+}
+.result-state-page {
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 50px 20px;
+
+    background:
+        linear-gradient(
+            180deg,
+            #f7faff 0%,
+            #eef4fc 100%
+        );
+}
+
+.result-state-container {
+    width: min(600px, 100%);
+}
+
+.result-state-card {
+    padding: 42px;
+
+    text-align: center;
+
+    background: var(--color-white);
+
+    border: 1px solid var(--color-border);
+
+    border-radius: 22px;
+
+    box-shadow:
+        0 20px 60px rgba(15, 30, 70, 0.08);
+}
+
+
+.success-icon {
+    width: 82px;
+    height: 82px;
+
+    margin: 0 auto 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #f0fdf4;
+
+    color: #16a34a;
+}
+
+
+.success-badge {
+    display: inline-flex;
+
+    margin-bottom: 12px;
+
+    padding: 5px 12px;
+
+    border-radius: 30px;
+
+    background: #f0fdf4;
+
+    color: #15803d;
+
+    font-size: 11px;
+    font-weight: 600;
+}
+
+
+.result-state-card h1 {
+    margin: 0 0 10px;
+
+    color: var(--color-navy);
+
+    font-size: 26px;
+    font-weight: 700;
+}
+
+
+.success-description {
+    max-width: 470px;
+
+    margin: 0 auto;
+
+    color: var(--color-text-muted);
+
+    font-size: 13px;
+
+    line-height: 2;
+}
+
+
+/* Information */
+
+.success-exam-info {
+    margin-top: 30px;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    border:
+        1px solid var(--color-border);
+
+    border-radius: 14px;
+
+    overflow: hidden;
+
+    background: #fbfdff;
+}
+
+.success-exam-info > div {
+    padding: 16px 10px;
+}
+
+.success-exam-info > div:not(:last-child) {
+    border-left:
+        1px solid var(--color-border);
+}
+
+.success-exam-info span {
+    display: block;
+
+    margin-bottom: 3px;
+
+    color: #94a3b8;
+
+    font-size: 9px;
+}
+
+.success-exam-info strong {
+    color: var(--color-navy);
+
+    font-size: 11px;
+    font-weight: 600;
+}
+
+
+/* Note */
+
+.success-note {
+    margin-top: 20px;
+
+    display: flex;
+    align-items: flex-start;
+
+    gap: 10px;
+
+    padding: 13px 15px;
+
+    text-align: right;
+
+    border-radius: 11px;
+
+    background: var(--color-blue-light);
+
+    border: 1px solid #dbeafe;
+}
+
+.success-note-icon {
+    width: 25px;
+    height: 25px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: white;
+
+    color: var(--color-blue);
+
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.success-note p {
+    margin: 0;
+
+    color: #475569;
+
+    font-size: 10px;
+
+    line-height: 1.9;
+}
+
+
+/* Buttons */
+
+.success-actions {
+    margin-top: 28px;
+
+    display: flex;
+    justify-content: center;
+
+    gap: 10px;
+}
+
+.success-primary-button,
+.success-secondary-button {
+    min-height: 47px;
+
+    padding: 0 22px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 11px;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    transition:
+        background 0.2s ease,
+        border-color 0.2s ease,
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.success-primary-button {
+    background: var(--color-blue);
+
+    color: white;
+}
+
+.success-primary-button:hover {
+    background: var(--color-blue-hover);
+
+    transform: translateY(-1px);
+}
+
+.success-secondary-button {
+    border:
+        1px solid #bfdbfe;
+
+    background: white;
+
+    color: var(--color-blue);
+}
+
+.success-secondary-button:hover {
+    background: var(--color-blue-light);
+}
+
+
+@media (max-width: 600px) {
+
+    .result-state-page {
+        align-items: flex-start;
+
+        padding-top: 30px;
+    }
+
+    .result-state-card {
+        padding: 28px 20px;
+    }
+
+    .success-icon {
+        width: 68px;
+        height: 68px;
+    }
+
+    .result-state-card h1 {
+        font-size: 22px;
+    }
+
+    .success-exam-info {
+        grid-template-columns: 1fr;
+    }
+
+    .success-exam-info > div:not(:last-child) {
+        border-left: 0;
+
+        border-bottom:
+            1px solid var(--color-border);
+    }
+
+    .success-actions {
+        flex-direction: column;
+    }
+
+    .success-primary-button,
+    .success-secondary-button {
+        width: 100%;
+    }
+
+}
